@@ -1,0 +1,14 @@
+# Sub-Project 1.2: Start Up Process Improvement Initiatives
+
+## 1. Initiative Startup & Execution Plan
+* **Initiative Name:** FDE Pricing Copilot & Fulfillment Optimization Pipeline
+* **Target Launch State:** Moving from problem definition (SP1.1) to technical execution architecture.
+
+## 2. Architectural Decisions & Model Benchmarking
+* **Model Benchmark & Margin Trade-offs:** Evaluated 4 regression architectures (Ridge, Random Forest, Decision Tree, KNN). Selected **Random Forest** for primary pricing guidance based on empirical performance metrics (**RMSE: 54.22 vs. Ridge: 171.73**) to minimize underpricing risk.
+* **Reputation Scoring Strategy:** Formulated a max-heap prioritization algorithm weighting seller ratings and review volume to balance trust metrics and platform liquidity.
+* **Fulfillment Path Optimization:** Integrated graph-based shortest-path routing (**Dijkstra's algorithm**) between regional transit nodes to model delivery cost impact on net margins.
+
+## 3. Resource Allocation & Risk Management
+* **Compute Stack:** Local open-weight execution via Ollama/LM Studio (fulfilling CFO zero-budget compliance).
+* **Monitoring Protocol:** Scheduled bi-weekly tracking checkpoints to monitor model drift and performance weights.
